@@ -18,8 +18,9 @@ DOMselectors.form.addEventListener("submit", function(event){
     DOMselectors.h2s.forEach((el)=> el.textContent = DOMselectors.firstName.value
     
     //const Album = makeAlbum();
-    //addard()
+    //addcard()
     //clearFields()
     //addRemoveButtons
     );
 });
+//dont use onclick(?)
