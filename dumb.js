@@ -41,12 +41,12 @@ DOMselectors.submit.addEventListener("click", function(event){
     const image = DOMselectors.image.value
 
     if (name && element && image) {
-        createCard()
+        createCard(name, element, image)
     }
 })
 
-function createCard() {
-    const holder = document.createElement("div")
+function createCard(name, element, image) {
+    /*const holder = document.createElement("div")
     holder.classList.add("holder")
    
     const name = `${name}`
@@ -55,5 +55,19 @@ function createCard() {
     image.scr = image
 
     holder.insertAdjacentHTML("afterbegin", name)
-    holder.insertAdjacentHTML("afterbegin", element)
+    holder.insertAdjacentHTML("afterbegin", element) */
+
+    const card = document.createElement("div")
+    card.classList.add(card)
+    
+    const name = document.createElement("h2")
+    const element = document.createElement("p")
+    const image = document.createElement("img")
+
+    let name = document.createTextNode(name)
+    let element = document.createTextNode(element)
+    img.src = image
+
+    name.appendchil
 }
+https://www.youtube.com/watch?v=vRic4SFmT8I
