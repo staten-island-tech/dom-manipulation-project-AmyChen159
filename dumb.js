@@ -68,6 +68,14 @@ function createCard(name, element, image) {
     let element = document.createTextNode(element)
     img.src = image
 
-    name.appendchil
+    name.appendchild(name)
+    element.appendchild(element)
+
+    card.appendchild(name)
+    card.appendchild(element)
+    card.appendchild(image)
+    container.appendchild(card)
 }
-https://www.youtube.com/watch?v=vRic4SFmT8I
+
+createCard("balls", "bananas", "https://media.cnn.com/api/v1/images/stellar/prod/120604032828-fresh-ripe-bananas.jpg?q=x_0,y_106,h_2019,w_3590,c_crop/h_720,w_1280")
+//https://www.youtube.com/watch?v=vRic4SFmT8I
