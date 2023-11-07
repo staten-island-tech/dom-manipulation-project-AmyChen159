@@ -49,10 +49,11 @@ function createCard() {
     const holder = document.createElement("div")
     holder.classList.add("holder")
    
-    const name = `${name}`
-    const element = `${element}`
     const image = document.createElement("image")
     image.scr = image
+
+    const name = `${name}`
+    const element = `${element}`
 
     holder.insertAdjacentHTML("afterbegin", name)
     holder.insertAdjacentHTML("afterbegin", element)
