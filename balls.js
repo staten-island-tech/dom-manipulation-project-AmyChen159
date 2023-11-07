@@ -9,23 +9,6 @@ const DOMselectors = {
     remove: document.querySelectorAll(".remove")
 }
 
-/*function createCard() {
-    let card = {}
-    card.name = DOMselectors.name.value 
-    card.line2 = DOMselectors.line2.value
-    card.image = DOMselectors.image.value
-
-    DOMselectors.submit.insertAdjacentHTML(
-        `afterend`,
-        `<div class="cards">
-             <p>${card.name}</p>
-             <p>${card.line2}</p>
-             <p><img src>${card.image}</img></p>
-            <button class="remove">Remove</button>
-        </div>`
-    )
-} */
-
 function createCard() {
     let card = {};
     card.name = DOMselectors.name.value
@@ -37,7 +20,7 @@ function createCard() {
       `<div class="cards">
         <p>${card.name}</p>
         <p>${card.line2}</p>
-        <img src= "${card.image}"/>
+        <p><img src= "${card.image}"/></p>
          <button class="remove">Remove</button>
     </div>`
     );
@@ -65,12 +48,3 @@ DOMselectors.form.addEventListener("submit", function (create) {
     clear()
     remove()
 })
-
-
-
-/* function remove() {
-    let buttons = document.querySelectorAll("button")
-    buttons.forEach(btn) => function(event){
-        (event.target.parentElement);
-    }
-} */
