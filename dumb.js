@@ -41,12 +41,12 @@ DOMselectors.submit.addEventListener("click", function(event){
     const image = DOMselectors.image.value
 
     if (name && element && image) {
-        createCard()
+        createCard(name, element, image)
     }
 })
 
-function createCard() {
-    const holder = document.createElement("div")
+function createCard(name, element, image) {
+    /*const holder = document.createElement("div")
     holder.classList.add("holder")
    
     const image = document.createElement("image")
@@ -56,5 +56,27 @@ function createCard() {
     const element = `${element}`
 
     holder.insertAdjacentHTML("afterbegin", name)
-    holder.insertAdjacentHTML("afterbegin", element)
+    holder.insertAdjacentHTML("afterbegin", element) */
+
+    const card = document.createElement("div")
+    card.classList.add(card)
+    
+    const name = document.createElement("h2")
+    const element = document.createElement("p")
+    const image = document.createElement("img")
+
+    let name = document.createTextNode(name)
+    let element = document.createTextNode(element)
+    img.src = image
+
+    name.appendchild(name)
+    element.appendchild(element)
+
+    card.appendchild(name)
+    card.appendchild(element)
+    card.appendchild(image)
+    container.appendchild(card)
 }
+
+createCard("balls", "bananas", "https://media.cnn.com/api/v1/images/stellar/prod/120604032828-fresh-ripe-bananas.jpg?q=x_0,y_106,h_2019,w_3590,c_crop/h_720,w_1280")
+//https://www.youtube.com/watch?v=vRic4SFmT8I
