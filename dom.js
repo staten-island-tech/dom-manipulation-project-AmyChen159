@@ -18,7 +18,7 @@ function createCard() {
     DOMselectors.submit.insertAdjacentHTML(
       `afterend`,
       `<div class="cards">
-        <p>${card.name}</p>
+        <p class="text">${card.name}</p>
         <p>${card.line2}</p>
         <p><img src= "${card.image}"/></p>
          <button class="remove">Remove</button>
